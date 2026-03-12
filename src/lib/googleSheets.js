@@ -23,27 +23,47 @@ export function isGoogleSheetsConfigured() {
 /**
  * Send data to the Google Apps Script web app.
  * 
+ * Google Apps Script web apps return a 302 redirect on POST.
+ * We use `redirect: "follow"` and send as text/plain to avoid
+ * CORS preflight issues when called from server-side.
+ * 
  * @param {"contact" | "newsletter"} action - Which sheet to write to
  * @param {object} data - The form data to send
  * @returns {{ success: boolean, message?: string }}
  */
 export async function writeToSheet(action, data) {
     if (!SCRIPT_URL) {
-        console.log("[Google Sheets] Not configured — skipping write");
+        console.warn("[Google Sheets] GOOGLE_SCRIPT_URL not set — skipping write. Set it in Vercel Environment Variables.");
         return { success: false, message: "not_configured" };
     }
 
     try {
+        const payload = JSON.stringify({ action, ...data });
+        console.log(`[Google Sheets] Writing ${action} data to sheet...`);
+
         const res = await fetch(SCRIPT_URL, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ action, ...data }),
+            redirect: "follow",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: payload,
         });
 
-        const result = await res.json();
-        return result;
+        const text = await res.text();
+
+        try {
+            const result = JSON.parse(text);
+            if (result.success) {
+                console.log(`[Google Sheets] ${action} write successful`);
+            } else {
+                console.error(`[Google Sheets] ${action} write failed:`, result.message);
+            }
+            return result;
+        } catch {
+            console.error(`[Google Sheets] Non-JSON response (status ${res.status}):`, text.slice(0, 200));
+            return { success: false, message: `Unexpected response: ${res.status}` };
+        }
     } catch (error) {
-        console.error(`[Google Sheets] Error:`, error.message);
+        console.error(`[Google Sheets] Network error:`, error.message);
         return { success: false, message: error.message };
     }
 }

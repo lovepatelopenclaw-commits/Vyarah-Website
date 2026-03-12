@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { writeToSheet, isGoogleSheetsConfigured } from "@/lib/googleSheets";
+import { sendNotification } from "@/lib/email";
 
 export async function POST(request) {
     try {
@@ -27,7 +28,12 @@ export async function POST(request) {
             if (!result.success) {
                 console.error("Google Sheets write error:", result.message);
             }
+        } else {
+            console.warn("[Newsletter] Google Sheets not configured — data not saved. Set GOOGLE_SCRIPT_URL in env.");
         }
+
+        // Send email notification (non-blocking)
+        sendNotification("newsletter", { email });
 
         return NextResponse.json(
             { success: true, message: "Subscribed successfully" },

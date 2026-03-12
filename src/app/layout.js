@@ -30,6 +30,14 @@ export const metadata = {
     type: "website",
     url: "https://vyarah.com",
     siteName: "Vyarah",
+    images: [
+      {
+        url: "https://vyarah.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Vyarah — AI-Powered Digital Growth Agency",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -42,7 +50,8 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   alternates: {
     canonical: "/",
@@ -62,7 +71,7 @@ export default function RootLayout({ children }) {
       "@id": "https://vyarah.com/#organization",
       "name": "Vyarah",
       "url": "https://vyarah.com",
-      "logo": "https://vyarah.com/favicon.svg",
+      "logo": "https://vyarah.com/logo.png",
       "description": "Vyarah is an AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
       "telephone": "+91 9510293768",
       "contactPoint": [
@@ -91,14 +100,6 @@ export default function RootLayout({ children }) {
       "description": "We built revenue machines, not websites. AI-powered digital systems that scale your business.",
       "publisher": {
         "@id": "https://vyarah.com/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://vyarah.com/search?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -106,7 +107,7 @@ export default function RootLayout({ children }) {
       "@type": "LocalBusiness",
       "@id": "https://vyarah.com/#localbusiness",
       "name": "Vyarah",
-      "image": "https://vyarah.com/favicon.svg",
+      "image": "https://vyarah.com/logo.png",
       "telephone": "+91 9510293768",
       "email": "hello@vyarah.com",
       "address": {

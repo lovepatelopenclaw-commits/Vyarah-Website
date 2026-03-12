@@ -1,3 +1,6 @@
+import blogPosts from "@/data/blog";
+import portfolioData from "@/data/portfolio";
+
 export default function sitemap() {
   const baseUrl = "https://vyarah.com";
 
@@ -24,6 +27,22 @@ export default function sitemap() {
     priority: 0.9,
   }));
 
+  // Blog Posts
+  const blogs = (blogPosts || []).map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date || Date.now()),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  // Portfolio / Case Studies
+  const portfolio = (portfolioData || []).map((project) => ({
+    url: `${baseUrl}/work/${project.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   // Combine and return
-  return [...routes, ...services];
+  return [...routes, ...services, ...blogs, ...portfolio];
 }
