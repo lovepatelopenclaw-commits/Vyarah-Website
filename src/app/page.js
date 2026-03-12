@@ -16,9 +16,9 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import SocialProof from "@/components/SocialProof";
 import BackToTop from "@/components/BackToTop";
 import PageLoader from "@/components/PageLoader";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -33,6 +33,7 @@ export default function Home() {
       <Portfolio />
       <WhyUs />
       <TechStack />
+      <Team />
       <Testimonials />
       <ROICalculator />
       <Pricing />
@@ -42,7 +43,6 @@ export default function Home() {
       <Footer />
       <ScrollReveal />
       <WhatsAppFloat />
-      <SocialProof />
       <BackToTop />
     </>
   );

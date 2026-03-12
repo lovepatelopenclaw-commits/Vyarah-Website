@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
         "addressCountry": "IN"
       },
       "sameAs": [
-        // Add Social links here once available.
+        "https://linkedin.com/company/vyarah"
       ]
     },
     {
@@ -99,6 +99,21 @@ export default function RootLayout({ children }) {
         },
         "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://vyarah.com/#localbusiness",
+      "name": "Vyarah",
+      "image": "https://vyarah.com/favicon.svg",
+      "telephone": "+91 9510293768",
+      "email": "hello@vyarah.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "url": "https://vyarah.com",
+      "priceRange": "$$$$"
     }
   ];
 

@@ -3,52 +3,7 @@
 import { useEffect, useRef, useCallback } from "react";
 import siteConfig from "@/data/siteConfig";
 
-function AnimatedStat({ value, suffix, label }) {
-    const ref = useRef(null);
-    const animated = useRef(false);
 
-    const animate = useCallback(() => {
-        if (animated.current || !ref.current) return;
-        animated.current = true;
-        const duration = 2000;
-        const start = performance.now();
-        function update(now) {
-            const elapsed = now - start;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            ref.current.textContent = Math.floor(eased * value);
-            if (progress < 1) requestAnimationFrame(update);
-            else ref.current.textContent = value;
-        }
-        requestAnimationFrame(update);
-    }, [value]);
-
-    useEffect(() => {
-        const el = ref.current;
-        if (!el) return;
-        const obs = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    animate();
-                    obs.unobserve(el);
-                }
-            },
-            { threshold: 0.5 }
-        );
-        obs.observe(el);
-        return () => obs.disconnect();
-    }, [animate]);
-
-    return (
-        <div className="stat-item">
-            <span className="stat-number" ref={ref}>
-                0
-            </span>
-            <span className="stat-suffix">{suffix}</span>
-            <span className="stat-label">{label}</span>
-        </div>
-    );
-}
 
 export default function Hero() {
     return (
@@ -87,7 +42,13 @@ export default function Hero() {
                     </div>
                     <div className="hero-stats reveal">
                         {siteConfig.stats.map((stat) => (
-                            <AnimatedStat key={stat.label} {...stat} />
+                            <div className="stat-item" key={stat.label}>
+                                <span className="stat-number">
+                                    {stat.value}
+                                </span>
+                                <span className="stat-suffix">{stat.suffix}</span>
+                                <span className="stat-label">{stat.label}</span>
+                            </div>
                         ))}
                     </div>
                 </div>

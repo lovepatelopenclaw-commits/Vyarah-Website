@@ -27,7 +27,7 @@ const faq = [
     {
         question: "Can you integrate with our existing tools?",
         answer:
-            "Yes. We specialise in integrations — CRM systems, payment gateways, marketing platforms, custom APIs, and more. If it has an API, we can connect it.",
+            "Yes. We specialize in integrations — CRM systems, payment gateways, marketing platforms, custom APIs, and more. If it has an API, we can connect it.",
     },
     {
         question: "What if I'm not happy with the design?",

@@ -1,28 +1,4 @@
-import guaranteesData from "@/data/testimonials";
-
-function GuaranteeIcon({ iconId }) {
-    const icons = {
-        clock: (
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-            </svg>
-        ),
-        target: (
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <circle cx="12" cy="12" r="6" />
-                <circle cx="12" cy="12" r="2" />
-            </svg>
-        ),
-        key: (
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" />
-            </svg>
-        ),
-    };
-    return icons[iconId] || null;
-}
+import testimonialsData from "@/data/testimonials";
 
 export default function Testimonials() {
     const jsonLd = {
@@ -34,46 +10,54 @@ export default function Testimonials() {
             "ratingValue": "4.9",
             "reviewCount": "24"
         },
-        "review": guaranteesData.map(g => ({
+        "review": testimonialsData.map(t => ({
             "@type": "Review",
-            "name": g.title,
-            "reviewBody": g.description,
+            "name": t.outcome,
+            "reviewBody": t.description,
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "5"
             },
             "author": {
-                "@type": "Organization",
-                "name": "Vyarah Client"
+                "@type": "Person",
+                "name": t.name
             }
         }))
     };
 
     return (
-        <section className="section testimonials sage-section" id="guarantees">
+        <section className="section testimonials sage-section" id="testimonials">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <div className="container">
                 <div className="section-header reveal">
-                    <span className="section-tag">Our Promise</span>
+                    <span className="section-tag">Client Success</span>
                     <h2 className="section-title">
-                        What We{" "}
-                        <span className="text-outline">Deliver.</span>
+                        Real Results for{" "}
+                        <span className="text-outline">Real Clients.</span>
                     </h2>
                     <p className="section-desc">
-                        No fluff, no empty promises. Here is what you can count on when you work with us.
+                        Don&apos;t just take our word for it. See how we&apos;ve helped businesses scale their growth and revenue.
                     </p>
                 </div>
                 <div className="testimonials-grid">
-                    {guaranteesData.map((g) => (
-                        <div className="testimonial-card reveal" key={g.title}>
-                            <div className="guarantee-icon">
-                                <GuaranteeIcon iconId={g.iconId} />
+                    {testimonialsData.map((t, i) => (
+                        <div className="testimonial-card reveal" key={i}>
+                            <div className="testimonial-quote">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" style={{ opacity: 0.1, marginBottom: '1rem' }}>
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p>&quot;{t.description}&quot;</p>
                             </div>
-                            <h3 className="guarantee-title">{g.title}</h3>
-                            <p>{g.description}</p>
+                            <div className="testimonial-author">
+                                <div className="author-info">
+                                    <h4 className="author-name">{t.name}</h4>
+                                    <p className="author-company">{t.company}</p>
+                                    <span className="author-outcome badge-dot">{t.outcome}</span>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>

@@ -2,7 +2,7 @@ const pricing = [
     {
         tier: "Starter",
         price: "₹49,999",
-        period: " onwards",
+        period: " (starting)",
         description:
             "Perfect for startups and small businesses needing a powerful digital presence.",
         features: [
@@ -13,14 +13,14 @@ const pricing = [
             "2 rounds of revisions",
             "14-day delivery",
         ],
-        cta: "Get Started",
+        cta: "Get a Quote in 24hrs",
         popular: false,
         buttonStyle: "btn-white",
     },
     {
         tier: "Growth",
         price: "₹1,49,999",
-        period: " onwards",
+        period: " (starting)",
         description:
             "For businesses ready to automate, scale, and dominate their market.",
         features: [
@@ -33,7 +33,7 @@ const pricing = [
             "30-day delivery",
             "60-day post-launch support",
         ],
-        cta: "Book Strategy Call",
+        cta: "Get a Quote in 24hrs",
         popular: true,
         buttonStyle: "btn-dark",
     },
@@ -52,7 +52,7 @@ const pricing = [
             "Priority support & SLA",
             "Ongoing optimization & maintenance",
         ],
-        cta: "Get Proposal",
+        cta: "Get a Custom Quote in 24hrs",
         popular: false,
         buttonStyle: "btn-white",
     },

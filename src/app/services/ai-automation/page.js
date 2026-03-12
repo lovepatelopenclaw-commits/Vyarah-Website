@@ -68,6 +68,26 @@ export default function AIAutomation() {
                     </div>
                 </div>
             </main>
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="service-details">
+                        <h2>Why AI Automation is Non-Negotiable for Growth</h2>
+                        <p>In today's fast-paced digital landscape, responding to leads manually or managing repetitive tasks is costing you revenue. Our <strong>AI Automation Services</strong> are designed to completely engineer how your business operates. From intelligent chatbots that provide 24/7 customer support to seamless Zapier workflows that connect your CRM, email, and sales pipelines — we build systems that work while you sleep.</p>
+                        
+                        <h3>Key Automation Solutions We Implement:</h3>
+                        <ul>
+                            <li><strong>AI Chatbots & Conversational Agents:</strong> Deploy Next.js and LangChain-powered chatbots that understand context, answer FAQs, and qualify leads on autopilot.</li>
+                            <li><strong>WhatsApp Business Automation:</strong> Connect directly with your customers where they are. Automate booking flows, delivery updates, and promotional broadcasts.</li>
+                            <li><strong>CRM & Pipeline Sync:</strong> No more manual data entry. We integrate HubSpot, Salesforce, or custom databases with your web forms to ensure zero lead leakage.</li>
+                            <li><strong>Custom AI Workflows:</strong> Using tools like Zapier and Make.com, we orchestrate complex logic that triggers emails, generates documents, and updates team dashboards instantly.</li>
+                        </ul>
+                        
+                        <div style={{ marginTop: '2rem' }}>
+                            <a href="/#contact" className="btn btn-dark">Discuss Your Automation Needs</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <Footer />
         </>
     );

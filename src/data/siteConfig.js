@@ -19,17 +19,17 @@ const siteConfig = {
     social: {
         // Add your social URLs here when ready
         // twitter: "https://x.com/yourhandle",
-        // linkedin: "https://linkedin.com/company/yourcompany",
+        linkedin: "https://linkedin.com/company/vyarah",
         // instagram: "https://instagram.com/yourhandle",
     },
 
     nav: [
-        { label: "Services", href: "#services" },
-        { label: "Process", href: "#process" },
-        { label: "Portfolio", href: "#portfolio" },
-        { label: "Pricing", href: "#pricing" },
-        { label: "FAQ", href: "#faq" },
-        { label: "Contact", href: "#contact" },
+        { label: "Services", href: "/#services" },
+        { label: "Process", href: "/#process" },
+        { label: "Portfolio", href: "/#portfolio" },
+        { label: "Pricing", href: "/#pricing" },
+        { label: "Blog", href: "/blog" },
+        { label: "Free Audit", href: "/free-audit" },
     ],
 
     stats: [
@@ -79,10 +79,11 @@ const siteConfig = {
             { label: "Growth Systems", href: "/services/growth-systems" },
         ],
         company: [
-            { label: "How We Work", href: "#process" },
-            { label: "Portfolio", href: "#portfolio" },
-            { label: "Pricing", href: "#pricing" },
-            { label: "FAQ", href: "#faq" },
+            { label: "How We Work", href: "/#process" },
+            { label: "Portfolio", href: "/#portfolio" },
+            { label: "Pricing", href: "/#pricing" },
+            { label: "Blog", href: "/blog" },
+            { label: "FAQ", href: "/#faq" },
         ],
     },
 };

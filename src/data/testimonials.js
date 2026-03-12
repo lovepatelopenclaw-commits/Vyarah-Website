@@ -1,24 +1,25 @@
-// "What We Deliver" — promises and guarantees
-// Replace with real testimonials as you get them
-const guarantees = [
+const testimonials = [
     {
-        title: "Speed That Respects Your Time",
+        name: "Rahul M.",
+        company: "D2C E-commerce Brand",
+        outcome: "Increased lead conversion by 189%",
         description:
-            "We deliver on the timeline we promise. Most starter projects ship within 2 weeks. No months of waiting, no endless back-and-forth.",
-        iconId: "clock",
+            "Vyarah transformed how we handle customer inquiries. Their AI chatbot integration captures leads 24/7, and the new website structure guided visitors straight to checkout. Our conversion rate tripled in the first month.",
     },
     {
-        title: "Built for Results, Not Awards",
+        name: "Sarah T.",
+        company: "B2B SaaS Startup",
+        outcome: "Automated 40 hours of manual work weekly",
         description:
-            "Every design decision, every line of code is filtered through one question: does this move the needle for your business?",
-        iconId: "target",
+            "Before working with Vyarah, our sales team spent hours manually syncing CRM data and booking calls. They built a custom Zapier and AI workflow that automated the entire process. They really understand growth.",
     },
     {
-        title: "You Own Everything",
+        name: "Aman P.",
+        company: "Local Tech Services",
+        outcome: "Ranked #1 for local search in 3 months",
         description:
-            "Full source code, full access, zero lock-in. Your project is yours. We earn your business through quality, not contracts.",
-        iconId: "key",
+            "The SEO and performance optimization they did on our site was phenomenal. Not only does the site load instantly, but we went from page 4 to page 1 for our main keywords, bringing in consistent high-quality leads.",
     },
 ];
 
-export default guarantees;
+export default testimonials;

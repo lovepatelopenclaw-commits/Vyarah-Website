@@ -68,6 +68,26 @@ export default function WebDevelopment() {
                     </div>
                 </div>
             </main>
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="service-details">
+                        <h2>Beyond Brochure Websites: Building Revenue Machines</h2>
+                        <p>Most agencies build "brochure websites" that look pretty but fail to generate leads. We take a different approach. Every website we develop is treated as a <strong>High-Performance Revenue Machine</strong>. Using modern frameworks like Next.js, we ensure your site is blazing fast, SEO-optimized out of the box, and structured specifically to guide visitors toward booking a call or making a purchase.</p>
+                        
+                        <h3>Our Web Development Capabilities:</h3>
+                        <ul>
+                            <li><strong>Next.js & React Performance:</strong> Sub-second load times that keep visitors engaged and boost your Google rankings.</li>
+                            <li><strong>Conversion Rate Optimization (CRO):</strong> Data-backed UX/UI design that prioritizes clear calls-to-action, trust indicators, and frictionless user journeys.</li>
+                            <li><strong>Custom Funnel Engineering:</strong> Multi-step lead capture flows, dynamic pricing calculators, and interactive elements that qualify prospects before they ever speak to your sales team.</li>
+                            <li><strong>Headless CMS Integrations:</strong> Empower your marketing team to publish content instantly without breaking the design, using Sanity, Contentful, or custom Supabase backends.</li>
+                        </ul>
+                        
+                        <div style={{ marginTop: '2rem' }}>
+                            <a href="/#contact" className="btn btn-dark">Start Building Your Revenue Machine</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <Footer />
         </>
     );
