@@ -50,8 +50,8 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   alternates: {
     canonical: "/",
