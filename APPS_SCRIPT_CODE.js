@@ -80,6 +80,6 @@ function doPost(e) {
 // Required: handle GET requests (Google's deploy test)
 function doGet() {
     return ContentService
-        .createTextOutput(JSON.stringify({ status: "Alacrity API is running" }))
+        .createTextOutput(JSON.stringify({ status: "Vyarah API is running" }))
         .setMimeType(ContentService.MimeType.JSON);
 }

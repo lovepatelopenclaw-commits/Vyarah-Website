@@ -10,8 +10,25 @@ export default function FAQ() {
         setActiveIndex(activeIndex === i ? null : i);
     };
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqData.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="section faq yellow-section" id="faq">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="dot-pattern"></div>
             <div className="container">
                 <div className="section-header reveal">

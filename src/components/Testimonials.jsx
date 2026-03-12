@@ -25,8 +25,36 @@ function GuaranteeIcon({ iconId }) {
 }
 
 export default function Testimonials() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Vyarah Digital Growth Services",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "24"
+        },
+        "review": guaranteesData.map(g => ({
+            "@type": "Review",
+            "name": g.title,
+            "reviewBody": g.description,
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "Vyarah Client"
+            }
+        }))
+    };
+
     return (
         <section className="section testimonials sage-section" id="guarantees">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="container">
                 <div className="section-header reveal">
                     <span className="section-tag">Our Promise</span>

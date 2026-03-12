@@ -2,8 +2,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Terms of Service — Alacrity",
-    description: "Alacrity terms of service for our digital agency services.",
+    title: "Terms of Service — Vyarah",
+    description: "Vyarah terms of service for our digital agency services.",
+    alternates: {
+        canonical: "/terms",
+    },
 };
 
 export default function TermsPage() {
@@ -19,7 +22,7 @@ export default function TermsPage() {
 
                     <h2>1. Services</h2>
                     <p>
-                        Alacrity provides AI-powered digital solutions including website
+                        Vyarah provides AI-powered digital solutions including website
                         development, automation systems, and growth strategy consulting. All
                         deliverables are outlined in individual project proposals.
                     </p>
@@ -40,14 +43,14 @@ export default function TermsPage() {
 
                     <h2>4. Limitation of Liability</h2>
                     <p>
-                        Alacrity&apos;s total liability for any claim shall not exceed the
+                        Vyarah&apos;s total liability for any claim shall not exceed the
                         total fees paid for the specific project giving rise to the claim.
                     </p>
 
                     <h2>5. Contact</h2>
                     <p>
                         For questions about these terms, contact us at
-                        hello@alacrity.agency.
+                        hello@vyarah.com.
                     </p>
 
                     <div className="legal-back">

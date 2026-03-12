@@ -1,16 +1,16 @@
 const siteConfig = {
-    name: "Alacrity",
+    name: "Vyarah",
     tagline: "We Don't Build Websites. We Build Revenue Machines.",
     description:
         "AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
-    url: "https://alacrity.agency",
-    email: "hello@alacrity.agency",
+    url: "https://vyarah.com",
+    email: "hello@vyarah.com",
     phone: "+91 9510293768",
     whatsapp: "https://wa.me/919510293768",
     location: "India — Serving Global Clients",
 
     og: {
-        title: "Alacrity — AI-Powered Digital Growth Agency",
+        title: "Vyarah — AI-Powered Digital Growth Agency",
         description:
             "We build revenue machines, not websites. AI-powered digital systems that scale your business on autopilot.",
         type: "website",
@@ -73,10 +73,10 @@ const siteConfig = {
 
     footerLinks: {
         services: [
-            { label: "AI Automation", href: "#services" },
-            { label: "Web Development", href: "#services" },
-            { label: "App Development", href: "#services" },
-            { label: "Growth Systems", href: "#services" },
+            { label: "AI Automation", href: "/services/ai-automation" },
+            { label: "Web Development", href: "/services/web-development" },
+            { label: "App Development", href: "/services/app-development" },
+            { label: "Growth Systems", href: "/services/growth-systems" },
         ],
         company: [
             { label: "How We Work", href: "#process" },

@@ -16,23 +16,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Alacrity — AI-Powered Digital Growth Agency | Scale Revenue with Intelligent Systems",
+  title: "Vyarah — AI-Powered Digital Growth Agency | Scale Revenue with Intelligent Systems",
   description:
-    "Alacrity is an AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
+    "Vyarah is an AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
   keywords:
     "AI agency, digital growth, automation, web development, SaaS, chatbots, CRM, lead generation, conversion optimization",
-  metadataBase: new URL("https://alacrity.agency"),
+  metadataBase: new URL("https://vyarah.com"),
   openGraph: {
-    title: "Alacrity — AI-Powered Digital Growth Agency",
+    title: "Vyarah — AI-Powered Digital Growth Agency",
     description:
       "We build revenue machines, not websites. AI-powered digital systems that scale your business on autopilot.",
     type: "website",
-    url: "https://alacrity.agency",
-    siteName: "Alacrity",
+    url: "https://vyarah.com",
+    siteName: "Vyarah",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alacrity — AI-Powered Digital Growth Agency",
+    title: "Vyarah — AI-Powered Digital Growth Agency",
     description:
       "We build revenue machines, not websites. AI-powered digital systems that scale your business on autopilot.",
   },
@@ -43,12 +43,74 @@ export const metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  alternates: {
+    canonical: "/",
+    languages: {
+      'en-IN': '/',
+      'en-US': '/',
+      'x-default': '/'
+    }
+  },
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://vyarah.com/#organization",
+      "name": "Vyarah",
+      "url": "https://vyarah.com",
+      "logo": "https://vyarah.com/favicon.svg",
+      "description": "Vyarah is an AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
+      "telephone": "+91 9510293768",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91 9510293768",
+          "contactType": "customer support",
+          "areaServed": ["IN", "US", "GB", "AU", "CA"],
+          "availableLanguage": ["en"]
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        // Add Social links here once available.
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://vyarah.com/#website",
+      "url": "https://vyarah.com",
+      "name": "Vyarah — AI-Powered Digital Growth Agency",
+      "description": "We built revenue machines, not websites. AI-powered digital systems that scale your business.",
+      "publisher": {
+        "@id": "https://vyarah.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vyarah.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ];
+
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

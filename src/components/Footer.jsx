@@ -44,7 +44,7 @@ export default function Footer() {
                                 </svg>
                             </span>
                             <span className="logo-text">
-                                Ala<span className="logo-highlight">crity</span>
+                                Vya<span className="logo-highlight">rah</span>
                             </span>
                         </a>
                         <p>
@@ -115,7 +115,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Alacrity. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Vyarah. All rights reserved.</p>
                     <div className="footer-legal">
                         <a href="/privacy">Privacy Policy</a>
                         <a href="/terms">Terms of Service</a>

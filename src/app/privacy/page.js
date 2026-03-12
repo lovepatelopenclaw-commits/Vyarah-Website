@@ -2,8 +2,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Privacy Policy — Alacrity",
-    description: "Alacrity privacy policy. How we collect, use, and protect your data.",
+    title: "Privacy Policy — Vyarah",
+    description: "Vyarah privacy policy. How we collect, use, and protect your data.",
+    alternates: {
+        canonical: "/privacy",
+    },
 };
 
 export default function PrivacyPage() {
@@ -40,12 +43,12 @@ export default function PrivacyPage() {
                     <h2>4. Your Rights</h2>
                     <p>
                         You may request access to, correction of, or deletion of your personal
-                        data by contacting us at hello@alacrity.agency.
+                        data by contacting us at hello@vyarah.com.
                     </p>
 
                     <h2>5. Contact</h2>
                     <p>
-                        For privacy-related inquiries, email us at hello@alacrity.agency.
+                        For privacy-related inquiries, email us at hello@vyarah.com.
                     </p>
 
                     <div className="legal-back">

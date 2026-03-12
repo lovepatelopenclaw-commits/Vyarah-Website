@@ -19,14 +19,14 @@ export default function Navbar() {
     return (
         <nav className={`navbar${scrolled ? " scrolled" : ""}`} id="navbar">
             <div className="container nav-container">
-                <a href="#" className="logo" aria-label="Alacrity home">
+                <a href="#" className="logo" aria-label="Vyarah home">
                     <span className="logo-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                         </svg>
                     </span>
                     <span className="logo-text">
-                        Ala<span className="logo-highlight">crity</span>
+                        Vya<span className="logo-highlight">rah</span>
                     </span>
                 </a>
                 <ul className={`nav-links${menuOpen ? " active" : ""}`} id="navLinks">

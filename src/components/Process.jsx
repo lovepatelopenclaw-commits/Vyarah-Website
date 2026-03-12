@@ -30,8 +30,25 @@ const steps = [
 ];
 
 export default function Process() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How We Supercharge Your Digital Growth",
+        "step": steps.map((step, index) => ({
+            "@type": "HowToStep",
+            "url": "https://vyarah.com/#process",
+            "name": step.title,
+            "text": step.description,
+            "position": index + 1
+        }))
+    };
+
     return (
         <section className="section process dark-section" id="process">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="container">
                 <div className="section-header reveal">
                     <span className="section-tag tag-dark">How We Work</span>

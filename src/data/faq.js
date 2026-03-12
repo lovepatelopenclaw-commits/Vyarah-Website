@@ -1,6 +1,6 @@
 const faq = [
     {
-        question: "How is Alacrity different from other agencies?",
+        question: "How is Vyarah different from other agencies?",
         answer:
             "We don't just design pretty pages — we build systems that generate revenue. Every project is backed by data, automation, and a clear focus on ROI. We combine AI tools with real engineering to deliver results, not just deliverables.",
     },

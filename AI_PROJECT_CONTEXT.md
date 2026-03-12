@@ -1,9 +1,9 @@
-# Alacrity Agency - Complete AI Project Context
+# Vyarah Agency - Complete AI Project Context
 
-This document is built specifically for AI agents to instantly understand the state, architecture, design system, and underlying functionality of the Alacrity Agency project.
+This document is built specifically for AI agents to instantly understand the state, architecture, design system, and underlying functionality of the Vyarah Agency project.
 
 ## 1. Project Overview
-- **Name**: Alacrity (formerly NexusForge)
+- **Name**: Vyarah (formerly NexusForge/Alacrity)
 - **Tagline**: We Don't Build Websites. We Build Revenue Machines.
 - **Description**: AI-powered digital growth agency offering automation systems, web/app development, and intelligent technology solutions.
 - **Goal**: A premium, high-converting agency landing page deployed on Vercel/Netlify.
@@ -78,5 +78,5 @@ To provide maximum flexibility to non-technical users, all form data bypasses tr
 
 ## 5. Known Quirks / Deployment Context
 - The project originally started under the brand "NexusForge" on a Supabase backend.
-- It was completely overhauled and rebranded to **Alacrity**. Any lingering text regarding "NexusForge" or "Supabase" inside `README.md` or old configurations is legacy. `siteConfig.js` reflects the absolute truth regarding business numbers, tagline, and details.
+- It was completely overhauled and rebranded to **Vyarah**. Any lingering text regarding "NexusForge", "Alacrity" or "Supabase" inside `README.md` or old configurations is legacy. `siteConfig.js` reflects the absolute truth regarding business numbers, tagline, and details.
 - Deployment operates with a single vital environment variable: `GOOGLE_SCRIPT_URL`. Ensure its deployment environment (Vercel) matches `.env.local`.

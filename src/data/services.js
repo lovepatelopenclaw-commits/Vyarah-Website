@@ -10,6 +10,7 @@ const services = [
             "CRM & Workflow Automation",
             "Lead Qualification Systems",
         ],
+        href: "/services/ai-automation",
     },
     {
         iconId: "web",
@@ -22,6 +23,7 @@ const services = [
             "Ecommerce Stores",
             "Performance Optimization",
         ],
+        href: "/services/web-development",
     },
     {
         iconId: "app",
@@ -34,6 +36,7 @@ const services = [
             "Custom Dashboards",
             "Mobile Applications",
         ],
+        href: "/services/app-development",
     },
     {
         iconId: "growth",
@@ -46,6 +49,7 @@ const services = [
             "Conversion Optimization",
             "Growth Strategy",
         ],
+        href: "/services/growth-systems",
     },
 ];
 

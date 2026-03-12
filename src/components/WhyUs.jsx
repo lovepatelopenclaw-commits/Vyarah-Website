@@ -81,7 +81,7 @@ export default function WhyUs() {
             <div className="dot-pattern"></div>
             <div className="container">
                 <div className="section-header reveal">
-                    <span className="section-tag">Why Alacrity</span>
+                    <span className="section-tag">Why Vyarah</span>
                     <h2 className="section-title">
                         Not Another Agency.{" "}
                         <span className="text-outline">A Growth</span> Partner.
