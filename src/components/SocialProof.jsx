@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 
 const proofMessages = [
     { city: "Mumbai", action: "inquired about web development" },
@@ -17,6 +17,12 @@ export default function SocialProof() {
     const [show, setShow] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [dismissed, setDismissed] = useState(false);
+
+    // Stable time-ago values per message index
+    const timeAgos = useMemo(
+        () => proofMessages.map((_, i) => (i * 7 + 3) % 15 + 2),
+        []
+    );
 
     const showNext = useCallback(() => {
         if (dismissed) return;
@@ -46,7 +52,7 @@ export default function SocialProof() {
     if (dismissed) return null;
 
     const msg = proofMessages[currentIndex];
-    const timeAgo = Math.floor(Math.random() * 15) + 2;
+    const timeAgo = timeAgos[currentIndex];
 
     return (
         <div className={`social-proof-toast${show ? " visible" : ""}`}>

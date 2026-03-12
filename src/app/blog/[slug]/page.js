@@ -5,6 +5,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
+export async function generateStaticParams() {
+    return blogPosts.map((post) => ({ slug: post.slug }));
+}
+
 export async function generateMetadata({ params }) {
     const resolvedParams = await params;
     const post = blogPosts.find((p) => p.slug === resolvedParams.slug);

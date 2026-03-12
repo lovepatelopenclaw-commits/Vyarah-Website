@@ -33,7 +33,7 @@ Within the first 30 days of deployment, the results were staggering:
 
 If you aren't engaging your visitors the moment they show intent, your competitors will. AI automation isn't just about saving time; it's about fundamentally changing how you interact with your market at scale.
         `,
-        date: "March 12, 2026",
+        date: "January 15, 2025",
         author: "Vyarah Growth Team"
     },
     {
@@ -63,7 +63,7 @@ Every platform we engineer comes with advanced programmatic SEO and dynamic sche
 
 By implementing comprehensive schema strategies for our clients, we consistently see double-digit increases in organic CTR within weeks of deployment.
         `,
-        date: "March 05, 2026",
+        date: "January 8, 2025",
         author: "Vyarah SEO Team"
     }
 ];

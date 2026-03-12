@@ -9,7 +9,7 @@ export default function Pricing() {
         "offers": {
             "@type": "Offer",
             "priceCurrency": "INR",
-            "price": plan.price.replace(/[^0-9]/g, ''),
+            "price": plan.price === "Custom" ? "0" : plan.price.replace(/[^0-9]/g, ''),
             "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
             "availability": "https://schema.org/InStock",
             "url": "https://vyarah.com/#pricing"

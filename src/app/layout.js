@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
       "@id": "https://vyarah.com/#website",
       "url": "https://vyarah.com",
       "name": "Vyarah — AI-Powered Digital Growth Agency",
-      "description": "We built revenue machines, not websites. AI-powered digital systems that scale your business.",
+      "description": "We build revenue machines, not websites. AI-powered digital systems that scale your business.",
       "publisher": {
         "@id": "https://vyarah.com/#organization"
       }

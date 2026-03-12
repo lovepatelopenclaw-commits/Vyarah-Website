@@ -4,6 +4,10 @@ import portfolioData from "@/data/portfolio";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
+export async function generateStaticParams() {
+    return portfolioData.map((project) => ({ slug: project.slug }));
+}
+
 export async function generateMetadata({ params }) {
     const resolvedParams = await params;
     const project = portfolioData.find((p) => p.slug === resolvedParams.slug);

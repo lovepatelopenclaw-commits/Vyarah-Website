@@ -16,7 +16,7 @@ export default function CTABanner() {
                     <a href="#contact" className="btn btn-yellow btn-lg">
                         Book Free Strategy Call
                     </a>
-                    <a href="#contact" className="btn btn-white">
+                    <a href="/free-audit" className="btn btn-white">
                         Request Free Audit
                     </a>
                 </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import siteConfig from "@/data/siteConfig";
 
 export default function ROICalculator() {
     const [revenue, setRevenue] = useState(500000);
@@ -139,7 +140,7 @@ export default function ROICalculator() {
                             </div>
                         </div>
                         <a
-                            href={`https://wa.me/919510293768?text=Hi!%20I%20used%20your%20calculator.%20Help%20me%20add%20%E2%82%B9${formatINR(uplift).replace('₹', '')}%20in%20potential%20uplift.`}
+                            href={`${siteConfig.whatsapp}?text=Hi!%20I%20used%20your%20calculator.%20Help%20me%20add%20%E2%82%B9${formatINR(uplift).replace('₹', '')}%20in%20potential%20uplift.`}
                             className="btn btn-dark btn-lg btn-block"
                             target="_blank"
                             rel="noopener noreferrer"

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Team() {
     return (
         <section className="section team" id="team">

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import ProblemSolution from "@/components/ProblemSolution";
+import Results from "@/components/Results";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
@@ -28,6 +29,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <ProblemSolution />
+      <Results />
       <Services />
       <Process />
       <Portfolio />
