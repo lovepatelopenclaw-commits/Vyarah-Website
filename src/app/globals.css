@@ -2472,13 +2472,6 @@ img {
   /* Section Spacing */
   .section {
     padding: 4rem 0;
-    overflow-x: clip;
-  }
-
-  /* Ensure container never exceeds viewport */
-  .container {
-    max-width: 100%;
-    overflow-x: hidden;
   }
 
   /* Reduce box-shadows on mobile to prevent overflow */
@@ -2506,8 +2499,6 @@ img {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
-    max-width: 100%;
-    overflow: hidden;
   }
 
   .hero-sub {
@@ -2597,12 +2588,7 @@ img {
   }
 
   .roi-results {
-    overflow: visible;
     padding: 1.5rem;
-  }
-
-  .roi-calculator .container {
-    overflow: visible;
   }
 
   /* Footer Adjustments */
@@ -2660,6 +2646,15 @@ img {
   /* Footer newsletter stack on mobile */
   .footer-newsletter {
     flex-direction: column;
+  }
+
+  /* Newsletter submit button: square with centered arrow */
+  .footer-newsletter .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
   }
 
   .footer-legal {

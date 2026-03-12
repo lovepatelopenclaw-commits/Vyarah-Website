@@ -118,7 +118,6 @@ export default function Footer() {
                                 type="submit"
                                 className="btn btn-yellow"
                                 disabled={subStatus === "sending"}
-                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.6rem', aspectRatio: '1', minWidth: '44px' }}
                             >
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                                     <path d="M5 12h14M12 5l7 7-7 7" />
