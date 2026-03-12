@@ -2695,15 +2695,26 @@ img {
     max-width: none;
   }
 
-  /* ROI bar label on mobile */
+  /* ROI bar layout on mobile — stack label+value above bar */
+  .roi-bar-group {
+    flex-wrap: wrap;
+  }
+
   .roi-bar-label {
-    width: 55px;
-    font-size: .72rem;
+    width: auto;
+    text-align: left;
+    font-size: .78rem;
   }
 
   .roi-bar-value {
-    min-width: 60px;
-    font-size: .8rem;
+    min-width: auto;
+    font-size: .85rem;
+    margin-left: auto;
+  }
+
+  .roi-bar-container {
+    width: 100%;
+    order: 3;
   }
 }
 
