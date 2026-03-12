@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 import { useState } from "react";
 import siteConfig from "@/data/siteConfig";
 
@@ -141,6 +142,7 @@ export default function FreeAudit() {
                 </div>
             </main>
             <Footer />
+            <ScrollReveal />
         </>
     );
 }

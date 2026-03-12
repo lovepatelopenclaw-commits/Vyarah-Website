@@ -2596,6 +2596,15 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .roi-results {
+    overflow: visible;
+    padding: 1.5rem;
+  }
+
+  .roi-calculator .container {
+    overflow: visible;
+  }
+
   /* Footer Adjustments */
   .footer-grid {
     grid-template-columns: 1fr;
