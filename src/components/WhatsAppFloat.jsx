@@ -27,7 +27,10 @@ export default function WhatsAppFloat() {
             aria-label="Chat on WhatsApp"
         >
             {tooltip && (
-                <span className="whatsapp-tooltip">
+                <span
+                    className="whatsapp-tooltip"
+                    onClick={(e) => e.stopPropagation()}
+                >
                     Chat with us
                     <button
                         className="whatsapp-tooltip-close"
