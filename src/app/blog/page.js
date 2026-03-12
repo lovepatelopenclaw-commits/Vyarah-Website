@@ -22,7 +22,7 @@ export default function BlogPage() {
                         <h1 className="section-title">The Vyarah <span className="text-outline">Blog</span></h1>
                         <p className="section-desc">Practical frameworks, AI implementation strategies, and insights on scaling modern service businesses.</p>
                     </div>
-                    <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                    <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', gap: '2rem' }}>
                         {blogPosts.map((post) => (
                             <Link href={`/blog/${post.slug}`} key={post.slug} style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
                                 <div className="blog-card reveal" style={{ 

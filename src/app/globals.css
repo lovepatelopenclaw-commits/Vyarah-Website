@@ -1751,6 +1751,62 @@ img {
   transform: translateY(0);
 }
 
+/* ---------- SERVICE DETAIL PAGES ---------- */
+.bg-light {
+  background: var(--light-gray);
+}
+
+.service-details {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-details h2 {
+  font-family: var(--ff-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.service-details h3 {
+  font-family: var(--ff-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 2rem 0 1rem;
+}
+
+.service-details p {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.service-details ul {
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+}
+
+.service-details li {
+  font-size: .95rem;
+  color: var(--gray);
+  font-weight: 500;
+  padding: .4rem 0 .4rem 1.5rem;
+  position: relative;
+  line-height: 1.7;
+}
+
+.service-details li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  font-weight: 800;
+  color: var(--black);
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1024px) {
   .hero-grid {
@@ -1826,6 +1882,64 @@ img {
     justify-content: center;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 7vw, 2rem);
+  }
+
+  .hero-badge {
+    font-size: .75rem;
+    padding: .3rem .8rem;
+  }
+
+  .pvs-card {
+    padding: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .why-card {
+    padding: 1.25rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .faq-question {
+    padding: 1rem;
+    font-size: .9rem;
+  }
+
+  .faq-answer p {
+    padding: 0 1rem 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .result-card {
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
   .whatsapp-float {
     bottom: 16px;
     right: 16px;
@@ -1838,6 +1952,21 @@ img {
     right: 12px;
     bottom: 80px;
     max-width: none;
+  }
+
+  .back-to-top {
+    bottom: 80px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .whatsapp-tooltip {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2548,14 +2677,41 @@ img {
     font-size: clamp(2.2rem, 9vw, 3.2rem);
   }
 
+  .hero-visual {
+    max-width: 100%;
+  }
+
   .hero-stats {
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
   }
 
+  /* Pricing text overflow */
+  .pricing-price {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+    word-break: break-word;
+  }
+
   /* Fix text-outline readability on small screens */
   .text-outline {
     -webkit-text-stroke: 1px var(--black);
+  }
+
+  /* Footer newsletter stack on mobile */
+  .footer-newsletter {
+    flex-direction: column;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+  }
+
+  /* Team card mobile padding */
+  .team-card {
+    padding: 1.5rem !important;
+    max-width: 100% !important;
   }
 }
