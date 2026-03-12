@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <nav className={`navbar${scrolled ? " scrolled" : ""}`} id="navbar">
             <div className="container nav-container">
-                <a href="#" className="logo" aria-label="Vyarah home">
+                <a href="/" className="logo" aria-label="Vyarah home">
                     <Image
                         src="/logo.png"
                         alt="Vyarah"

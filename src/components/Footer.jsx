@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="container">
                 <div className="footer-grid">
                     <div className="footer-brand">
-                        <a href="#" className="logo">
+                        <a href="/" className="logo">
                             <Image
                                 src="/logo.png"
                                 alt="Vyarah"
