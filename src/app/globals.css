@@ -975,6 +975,10 @@ img {
   color: var(--sage);
 }
 
+.card-dark .result-metrics {
+  border-top: 2px solid rgba(255, 255, 255, .25);
+}
+
 .result-badge {
   display: inline-block;
   font-size: .7rem;
@@ -1006,6 +1010,11 @@ img {
   color: var(--charcoal);
   margin-bottom: 1.25rem;
   font-weight: 500;
+}
+
+.result-card.card-dark h3,
+.result-card.card-dark p {
+  color: var(--white);
 }
 
 .result-metrics {
@@ -2369,6 +2378,20 @@ img {
    ======================================== */
 
 /* ---------- TABLETS (≤ 1024px) ---------- */
+@media (max-width: 1200px) {
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: .82rem;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
