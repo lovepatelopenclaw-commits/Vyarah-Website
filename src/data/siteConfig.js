@@ -24,6 +24,7 @@ const siteConfig = {
     },
 
     nav: [
+        { label: "Home", href: "/#hero" },
         { label: "Services", href: "/#services" },
         { label: "Process", href: "/#process" },
         { label: "Portfolio", href: "/#portfolio" },

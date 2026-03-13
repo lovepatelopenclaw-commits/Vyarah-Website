@@ -2135,6 +2135,12 @@ img {
   color: var(--charcoal);
 }
 
+.roi-cta-btn {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+}
+
 /* ---------- WHATSAPP FLOAT ---------- */
 .whatsapp-float {
   position: fixed;
@@ -2591,6 +2597,17 @@ img {
     padding: 1.5rem;
   }
 
+  .roi-summary-item.roi-uplift {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .3rem;
+  }
+
+  .roi-cta-btn {
+    font-size: .92rem;
+    padding: .9rem 1rem;
+  }
+
   /* Footer Adjustments */
   .footer-grid {
     grid-template-columns: 1fr;
@@ -2846,6 +2863,10 @@ img {
 
   .roi-summary-value {
     font-size: 1.1rem;
+  }
+
+  .roi-cta-btn {
+    font-size: .86rem;
   }
 
   .portfolio-card {

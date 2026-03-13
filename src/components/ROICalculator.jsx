@@ -141,11 +141,11 @@ export default function ROICalculator() {
                         </div>
                         <a
                             href={`${siteConfig.whatsapp}?text=Hi!%20I%20used%20your%20calculator.%20Help%20me%20add%20%E2%82%B9${formatINR(uplift).replace('₹', '')}%20in%20potential%20uplift.`}
-                            className="btn btn-dark btn-lg btn-block"
+                            className="btn btn-dark btn-lg btn-block roi-cta-btn"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Discuss this {formatINR(uplift)} ROI Strategy on WhatsApp
+                            Discuss ROI Strategy on WhatsApp
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>

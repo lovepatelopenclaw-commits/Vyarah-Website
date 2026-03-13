@@ -5,14 +5,46 @@ import { sendNotification } from "@/lib/email";
 export async function POST(request) {
     try {
         const body = await request.json();
-        const { name, email, business, message } = body;
+        const source = typeof body.source === "string" ? body.source : "Contact";
+        const isFreeAudit = source.toLowerCase().includes("audit");
 
-        // Validation
-        if (!name || !email || !business || !message) {
-            return NextResponse.json(
-                { error: "All fields are required" },
-                { status: 400 }
-            );
+        let name;
+        let email;
+        let business;
+        let message;
+
+        if (isFreeAudit) {
+            const { website, revenue, goal } = body;
+
+            name = body.name;
+            email = body.email;
+            business = "Free Audit Lead";
+            message = [
+                `Website: ${website || "N/A"}`,
+                `Revenue Range: ${revenue || "N/A"}`,
+                `Primary Goal: ${goal || "N/A"}`,
+                `Source: ${source}`,
+            ].join("\n");
+
+            if (!name || !email || !website || !revenue || !goal) {
+                return NextResponse.json(
+                    { error: "All free audit fields are required" },
+                    { status: 400 }
+                );
+            }
+        } else {
+            name = body.name;
+            email = body.email;
+            business = body.business;
+            message = body.message;
+
+            // Validation for standard contact submissions
+            if (!name || !email || !business || !message) {
+                return NextResponse.json(
+                    { error: "All fields are required" },
+                    { status: 400 }
+                );
+            }
         }
 
         // Write to Google Sheets if configured
@@ -22,6 +54,7 @@ export async function POST(request) {
                 email,
                 business,
                 message,
+                source,
             });
 
             if (!result.success) {
