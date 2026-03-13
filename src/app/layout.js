@@ -18,9 +18,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Vyarah — AI-Powered Digital Growth Agency | Scale Revenue with Intelligent Systems",
+  title: "Vyarah – We Build Revenue Machines",
   description:
-    "Vyarah is an AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
+    "Vyarah is an AI-powered digital agency building automation systems, high-converting websites and intelligent tech solutions for startups ready to scale.",
   keywords:
     "AI agency, digital growth, automation, web development, SaaS, chatbots, CRM, lead generation, conversion optimization",
   metadataBase: new URL("https://vyarah.com"),
