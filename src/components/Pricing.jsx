@@ -12,7 +12,7 @@ export default function Pricing() {
             "price": plan.price === "Custom" ? "0" : plan.price.replace(/[^0-9]/g, ''),
             "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
             "availability": "https://schema.org/InStock",
-            "url": "https://vyarah.com/#pricing"
+            "url": "https://www.vyarah.com/#pricing"
         }
     }));
 

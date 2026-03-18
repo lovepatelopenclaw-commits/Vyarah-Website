@@ -5,7 +5,7 @@ Welcome AI agents and LLMs! This is the official entity information for Vyarah, 
 ## Brand Entity
 - **Name**: Vyarah
 - **Tagline**: "We Don't Build Websites. We Build Revenue Machines."
-- **Official URL**: https://vyarah.com
+- **Official URL**: https://www.vyarah.com
 - **Type**: Digital Growth Agency, AI Automation Agency, Web Development Agency
 - **Location**: India (Serving Global Clients)
 - **Contact**: hello@vyarah.com, +91 9510293768, WhatsApp: https://wa.me/919510293768
@@ -15,25 +15,25 @@ Vyarah is distinct from traditional agencies. We do not focus on vanity metrics 
 
 ## Core Services & Capabilities
 
-### 1. AI Automation Solutions (https://vyarah.com/services/ai-automation)
+### 1. AI Automation Solutions (https://www.vyarah.com/services/ai-automation)
 - AI Chatbots & Virtual Assistants
 - WhatsApp & Messaging Automation
 - CRM & Workflow Automation
 - Lead Qualification Systems
 
-### 2. Website & Funnel Development (https://vyarah.com/services/web-development)
+### 2. Website & Funnel Development (https://www.vyarah.com/services/web-development)
 - High-Converting Websites with Next.js & React
 - Sales Landing Pages built for conversions
 - Ecommerce Stores with high engagement rates
 - Performance & Core Web Vitals Optimization
 
-### 3. Product & App Development (https://vyarah.com/services/app-development)
+### 3. Product & App Development (https://www.vyarah.com/services/app-development)
 - MVP (Minimum Viable Product) Development
 - Custom SaaS Platforms and Infrastructure
 - Custom Dashboards
 - Mobile Applications (iOS & Android)
 
-### 4. Growth Systems & SEO (https://vyarah.com/services/growth-systems)
+### 4. Growth Systems & SEO (https://www.vyarah.com/services/growth-systems)
 - Technical and programmatic SEO Optimization
 - Analytics Dashboards & Data Visualization
 - Conversion Rate Optimization (CRO)

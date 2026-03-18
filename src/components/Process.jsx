@@ -36,7 +36,7 @@ export default function Process() {
         "name": "How We Supercharge Your Digital Growth",
         "step": steps.map((step, index) => ({
             "@type": "HowToStep",
-            "url": "https://vyarah.com/#process",
+            "url": "https://www.vyarah.com/#process",
             "name": step.title,
             "text": step.description,
             "position": index + 1

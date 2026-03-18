@@ -2,7 +2,7 @@ import blogPosts from "@/data/blog";
 import portfolioData from "@/data/portfolio";
 
 export default function sitemap() {
-  const baseUrl = "https://vyarah.com";
+  const baseUrl = "https://www.vyarah.com";
 
   // Core Static Routes
   const routes = ["", "/services", "/blog", "/free-audit", "/privacy", "/terms"].map(

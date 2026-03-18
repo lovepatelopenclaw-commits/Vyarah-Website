@@ -23,13 +23,13 @@ export const metadata = {
     "Vyarah is an AI-powered digital agency building automation systems, high-converting websites and intelligent tech solutions for startups ready to scale.",
   keywords:
     "AI agency, digital growth, automation, web development, SaaS, chatbots, CRM, lead generation, conversion optimization",
-  metadataBase: new URL("https://vyarah.com"),
+  metadataBase: new URL("https://www.vyarah.com"),
   openGraph: {
     title: "Vyarah — AI-Powered Digital Growth Agency",
     description:
       "We build revenue machines, not websites. AI-powered digital systems that scale your business on autopilot.",
     type: "website",
-    url: "https://vyarah.com",
+    url: "https://www.vyarah.com",
     siteName: "Vyarah",
   },
   twitter: {
@@ -58,10 +58,10 @@ export default function RootLayout({ children }) {
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": "https://vyarah.com/#organization",
+      "@id": "https://www.vyarah.com/#organization",
       "name": "Vyarah",
-      "url": "https://vyarah.com",
-      "logo": "https://vyarah.com/logo.png",
+      "url": "https://www.vyarah.com",
+      "logo": "https://www.vyarah.com/logo.png",
       "description": "Vyarah is an AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
       "telephone": "+91 9510293768",
       "contactPoint": [
@@ -84,27 +84,27 @@ export default function RootLayout({ children }) {
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "@id": "https://vyarah.com/#website",
-      "url": "https://vyarah.com",
+      "@id": "https://www.vyarah.com/#website",
+      "url": "https://www.vyarah.com",
       "name": "Vyarah — AI-Powered Digital Growth Agency",
       "description": "We build revenue machines, not websites. AI-powered digital systems that scale your business.",
       "publisher": {
-        "@id": "https://vyarah.com/#organization"
+        "@id": "https://www.vyarah.com/#organization"
       }
     },
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "@id": "https://vyarah.com/#localbusiness",
+      "@id": "https://www.vyarah.com/#localbusiness",
       "name": "Vyarah",
-      "image": "https://vyarah.com/logo.png",
+      "image": "https://www.vyarah.com/logo.png",
       "telephone": "+91 9510293768",
       "email": "hello@vyarah.com",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "IN"
       },
-      "url": "https://vyarah.com",
+      "url": "https://www.vyarah.com",
       "priceRange": "$$$$"
     }
   ];

@@ -3,7 +3,7 @@ const siteConfig = {
     tagline: "We Don't Build Websites. We Build Revenue Machines.",
     description:
         "AI-powered digital growth agency helping businesses scale revenue through high-converting websites, automation systems, and intelligent technology solutions.",
-    url: "https://vyarah.com",
+    url: "https://www.vyarah.com",
     email: "hello@vyarah.com",
     phone: "+91 9510293768",
     whatsapp: "https://wa.me/919510293768",

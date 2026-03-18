@@ -22,10 +22,10 @@ export default function AIAutomation() {
             "provider": {
                 "@type": "Organization",
                 "name": "Vyarah",
-                "url": "https://vyarah.com"
+                "url": "https://www.vyarah.com"
             },
             "description": metadata.description,
-            "url": "https://vyarah.com/services/ai-automation"
+            "url": "https://www.vyarah.com/services/ai-automation"
         },
         {
             "@context": "https://schema.org",
@@ -35,13 +35,13 @@ export default function AIAutomation() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://vyarah.com"
+                    "item": "https://www.vyarah.com"
                 },
                 {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Services",
-                    "item": "https://vyarah.com/services"
+                    "item": "https://www.vyarah.com/services"
                 },
                 {
                     "@type": "ListItem",

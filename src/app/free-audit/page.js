@@ -22,11 +22,11 @@ export default function FreeAudit() {
             "@type": "WebPage",
             "name": "Free Growth Audit",
             "description": metadata.description,
-            "url": "https://vyarah.com/free-audit",
+            "url": "https://www.vyarah.com/free-audit",
             "provider": {
                 "@type": "Organization",
                 "name": "Vyarah",
-                "url": "https://vyarah.com"
+                "url": "https://www.vyarah.com"
             }
         },
         {
@@ -37,7 +37,7 @@ export default function FreeAudit() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://vyarah.com"
+                    "item": "https://www.vyarah.com"
                 },
                 {
                     "@type": "ListItem",
