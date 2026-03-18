@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import siteConfig from "@/data/siteConfig";
 
 export default function Footer() {
@@ -38,7 +39,7 @@ export default function Footer() {
             <div className="container">
                 <div className="footer-grid">
                     <div className="footer-brand">
-                        <a href="/" className="logo">
+                        <Link href="/" className="logo">
                             <Image
                                 src="/logo.png"
                                 alt="Vyarah"
@@ -49,10 +50,13 @@ export default function Footer() {
                             <span className="logo-text">
                                 Vya<span className="logo-highlight">rah</span>
                             </span>
-                        </a>
+                        </Link>
                         <p>
                             AI-powered digital growth systems that scale your business,
                             automate operations, and multiply revenue.
+                        </p>
+                        <p className="footer-location">
+                            {siteConfig.location}
                         </p>
                         <div className="footer-contact-info">
                             <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="footer-phone">
