@@ -8,6 +8,10 @@ export const metadata = {
     alternates: {
         canonical: "/services",
     },
+    openGraph: {
+        title: "Services — Vyarah",
+        description: "AI-powered automation, web development, product engineering, and growth systems.",
+    },
 };
 
 export default function ServicesPage() {

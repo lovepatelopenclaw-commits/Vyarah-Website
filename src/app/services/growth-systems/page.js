@@ -7,6 +7,10 @@ export const metadata = {
     alternates: {
         canonical: "/services/growth-systems",
     },
+    openGraph: {
+        title: "Growth Systems & SEO — Vyarah",
+        description: "Data-driven SEO strategies, conversion rate optimization, and programmatic growth engines for compounding returns.",
+    },
 };
 
 export default function GrowthSystems() {

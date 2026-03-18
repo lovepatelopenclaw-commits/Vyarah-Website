@@ -5,7 +5,7 @@ export default function sitemap() {
   const baseUrl = "https://vyarah.com";
 
   // Core Static Routes
-  const routes = ["", "/services", "/blog", "/privacy", "/terms"].map(
+  const routes = ["", "/services", "/blog", "/free-audit", "/privacy", "/terms"].map(
     (route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),

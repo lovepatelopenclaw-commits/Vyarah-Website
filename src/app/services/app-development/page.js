@@ -7,6 +7,10 @@ export const metadata = {
     alternates: {
         canonical: "/services/app-development",
     },
+    openGraph: {
+        title: "App & Product Development — Vyarah",
+        description: "MVP and full-scale SaaS platform development using modern tech stacks like React, Next.js, and Supabase.",
+    },
 };
 
 export default function AppDevelopment() {

@@ -46,7 +46,7 @@ export default async function BlogPost({ params }) {
             "name": "Vyarah",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://vyarah.com/favicon.svg"
+                "url": "https://vyarah.com/logo.png"
             }
         }
     };

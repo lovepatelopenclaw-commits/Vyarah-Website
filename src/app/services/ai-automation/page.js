@@ -7,6 +7,10 @@ export const metadata = {
     alternates: {
         canonical: "/services/ai-automation",
     },
+    openGraph: {
+        title: "AI Automation Services — Vyarah",
+        description: "Eliminate manual work and scale revenue with AI chatbots, WhatsApp automation, and CRM logic built for ambitious businesses.",
+    },
 };
 
 export default function AIAutomation() {

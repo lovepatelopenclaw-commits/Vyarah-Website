@@ -10,6 +10,10 @@ export const metadata = {
     alternates: {
         canonical: "/blog",
     },
+    openGraph: {
+        title: "Blog — Vyarah",
+        description: "Insights on AI automation, digital growth, and scaling your business.",
+    },
 };
 
 export default function BlogPage() {

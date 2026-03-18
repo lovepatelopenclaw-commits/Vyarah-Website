@@ -31,14 +31,6 @@ export const metadata = {
     type: "website",
     url: "https://vyarah.com",
     siteName: "Vyarah",
-    images: [
-      {
-        url: "https://vyarah.com/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Vyarah — AI-Powered Digital Growth Agency",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -50,14 +42,7 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  icons: {
-    icon: [
-      { url: "/favicon.svg?v=2", type: "image/svg+xml" },
-      { url: "/favicon.ico?v=2" },
-    ],
-    shortcut: "/favicon.ico?v=2",
-    apple: "/apple-icon.png?v=2",
-  },
+
   alternates: {
     canonical: "/",
     languages: {

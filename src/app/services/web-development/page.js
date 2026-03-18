@@ -7,6 +7,10 @@ export const metadata = {
     alternates: {
         canonical: "/services/web-development",
     },
+    openGraph: {
+        title: "Web Development Services — Vyarah",
+        description: "High-converting websites and funnels engineered for Next.js performance and maximum conversions.",
+    },
 };
 
 export default function WebDevelopment() {
