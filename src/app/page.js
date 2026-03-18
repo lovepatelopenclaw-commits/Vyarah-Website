@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import ProblemSolution from "@/components/ProblemSolution";
 import Results from "@/components/Results";
+import ChatbotDemoPromo from "@/components/ChatbotDemoPromo";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
@@ -30,6 +31,7 @@ export default function Home() {
       <Marquee />
       <ProblemSolution />
       <Results />
+      <ChatbotDemoPromo />
       <Services />
       <Process />
       <Portfolio />

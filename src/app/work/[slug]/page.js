@@ -80,132 +80,38 @@ export default async function CaseStudy({ params }) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <Navbar />
-            <main className="section" style={{ paddingTop: "120px", minHeight: "60vh" }}>
-                <article className="container" style={{ maxWidth: "800px" }}>
-                    <div style={{ marginBottom: "2rem" }}>
-                        <Link
-                            href="/#portfolio"
-                            style={{
-                                color: "var(--sage)",
-                                textDecoration: "none",
-                                fontWeight: 500,
-                            }}
-                        >
-                            {"<- Back to Portfolio"}
+            <main className="section">
+                <article className="container article-shell">
+                    <div className="article-back">
+                        <Link href="/#portfolio" className="back-link">
+                            ← Back to Portfolio
                         </Link>
                     </div>
 
-                    <header style={{ marginBottom: "4rem" }}>
-                        <span
-                            className="section-tag"
-                            style={{ marginBottom: "1.5rem", display: "inline-block" }}
-                        >
-                            {project.category}
-                        </span>
-                        <h1
-                            style={{
-                                fontSize: "clamp(2rem, 5vw, 3.5rem)",
-                                lineHeight: 1.1,
-                                marginBottom: "1.5rem",
-                                color: "var(--text-dark)",
-                            }}
-                        >
-                            {project.title}
-                        </h1>
-                        <p
-                            style={{
-                                fontSize: "1.25rem",
-                                color: "var(--text-muted)",
-                                lineHeight: 1.6,
-                            }}
-                        >
-                            {project.description}
-                        </p>
+                    <header className="article-header">
+                        <span className="section-tag article-tag">{project.category}</span>
+                        <h1 className="article-title article-title-wide">{project.title}</h1>
+                        <p className="article-excerpt">{project.description}</p>
                     </header>
 
-                    <div
-                        className="case-study-content"
-                        style={{
-                            lineHeight: 1.8,
-                            color: "var(--text-body)",
-                            fontSize: "1.1rem",
-                        }}
-                    >
-                        <div
-                            style={{
-                                background: "var(--surface)",
-                                padding: "2rem",
-                                borderRadius: "16px",
-                                marginBottom: "3rem",
-                                border: "1px solid var(--border)",
-                            }}
-                        >
-                            <h3
-                                style={{
-                                    marginTop: 0,
-                                    color: "var(--charcoal)",
-                                    fontSize: "1.2rem",
-                                    marginBottom: "1rem",
-                                }}
-                            >
-                                Client Overview
-                            </h3>
-                            <p style={{ margin: 0 }}>
+                    <div className="article-content case-study-content">
+                        <div className="case-study-summary">
+                            <h3 className="article-h3 case-study-summary-title">Client Overview</h3>
+                            <p className="article-paragraph article-paragraph-tight">
                                 <strong>{project.clientInfo}</strong>
                             </p>
                         </div>
 
-                        <h2
-                            style={{
-                                marginTop: "3rem",
-                                marginBottom: "1.5rem",
-                                color: "var(--text-dark)",
-                            }}
-                        >
-                            The Challenge
-                        </h2>
-                        <p style={{ marginBottom: "2rem" }}>{project.challenge}</p>
+                        <h2 className="article-h2">The Challenge</h2>
+                        <p className="article-paragraph">{project.challenge}</p>
 
-                        <h2
-                            style={{
-                                marginTop: "3rem",
-                                marginBottom: "1.5rem",
-                                color: "var(--text-dark)",
-                            }}
-                        >
-                            Our Solution
-                        </h2>
-                        <p style={{ marginBottom: "3rem" }}>{project.solution}</p>
+                        <h2 className="article-h2">Our Solution</h2>
+                        <p className="article-paragraph">{project.solution}</p>
 
-                        <h2
-                            style={{
-                                marginTop: "3rem",
-                                marginBottom: "1.5rem",
-                                color: "var(--text-dark)",
-                            }}
-                        >
-                            The Results
-                        </h2>
-                        <ul
-                            className="results-list"
-                            style={{
-                                listStyle: "none",
-                                padding: 0,
-                                marginBottom: "4rem",
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: "1rem",
-                            }}
-                        >
+                        <h2 className="article-h2">The Results</h2>
+                        <ul className="results-list">
                             {project.results.map((result, idx) => (
-                                <li
-                                    key={idx}
-                                    style={{
-                                        display: "flex",
-                                        alignItems: "flex-start",
-                                        gap: "1rem",
-                                    }}
-                                >
+                                <li key={idx} className="results-list-item">
                                     <svg
                                         width="24"
                                         height="24"
@@ -213,51 +119,25 @@ export default async function CaseStudy({ params }) {
                                         fill="none"
                                         stroke="var(--sage)"
                                         strokeWidth="2"
-                                        style={{ flexShrink: 0, marginTop: "4px" }}
+                                        className="results-list-icon"
                                     >
                                         <polyline points="20 6 9 17 4 12" />
                                     </svg>
-                                    <span style={{ fontWeight: 500 }}>{result}</span>
+                                    <span>{result}</span>
                                 </li>
                             ))}
                         </ul>
 
-                        <blockquote
-                            style={{
-                                borderLeft: "4px solid var(--sage)",
-                                paddingLeft: "1.5rem",
-                                margin: "4rem 0",
-                                fontStyle: "italic",
-                                fontSize: "1.25rem",
-                                color: "var(--charcoal)",
-                            }}
-                        >
+                        <blockquote className="case-study-quote">
                             &quot;{project.testimonial.text}&quot;
-                            <footer
-                                style={{
-                                    marginTop: "1rem",
-                                    fontSize: "1rem",
-                                    fontStyle: "normal",
-                                    fontWeight: 600,
-                                    color: "var(--text-muted)",
-                                }}
-                            >
-                                - {project.testimonial.author}
+                            <footer className="case-study-quote-author">
+                                {project.testimonial.author}
                             </footer>
                         </blockquote>
                     </div>
 
-                    <div
-                        style={{
-                            marginTop: "4rem",
-                            borderTop: "1px solid var(--border)",
-                            paddingTop: "3rem",
-                            textAlign: "center",
-                        }}
-                    >
-                        <h2 style={{ marginBottom: "1.5rem", color: "var(--text-dark)" }}>
-                            Ready for similar results?
-                        </h2>
+                    <div className="case-study-cta">
+                        <h2 className="article-h2 case-study-cta-title">Ready for similar results?</h2>
                         <Link href="/free-audit" className="btn btn-dark btn-lg">
                             Get Your Free Growth Audit
                             <svg

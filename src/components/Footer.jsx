@@ -58,6 +58,11 @@ export default function Footer() {
                         <p className="footer-location">
                             {siteConfig.location}
                         </p>
+                        <div className="footer-badges">
+                            <span className="footer-badge">Reply within 24 hrs</span>
+                            <span className="footer-badge">Founder-led delivery</span>
+                            <span className="footer-badge">India-based, global-ready</span>
+                        </div>
                         <div className="footer-contact-info">
                             <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="footer-phone">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -88,7 +93,7 @@ export default function Footer() {
                         <ul>
                             {siteConfig.footerLinks.services.map((l) => (
                                 <li key={l.label}>
-                                    <a href={l.href}>{l.label}</a>
+                                    <Link href={l.href}>{l.label}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -98,7 +103,7 @@ export default function Footer() {
                         <ul>
                             {siteConfig.footerLinks.company.map((l) => (
                                 <li key={l.label}>
-                                    <a href={l.href}>{l.label}</a>
+                                    <Link href={l.href}>{l.label}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -133,8 +138,8 @@ export default function Footer() {
                 <div className="footer-bottom">
                     <p>&copy; {new Date().getFullYear()} Vyarah. All rights reserved.</p>
                     <div className="footer-legal">
-                        <a href="/privacy">Privacy Policy</a>
-                        <a href="/terms">Terms of Service</a>
+                        <Link href="/privacy">Privacy Policy</Link>
+                        <Link href="/terms">Terms of Service</Link>
                     </div>
                 </div>
             </div>

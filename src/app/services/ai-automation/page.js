@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -76,7 +77,7 @@ export default function AIAutomation() {
                 <div className="container">
                     <div className="service-details">
                         <h2>Why AI Automation is Non-Negotiable for Growth</h2>
-                        <p>In today's fast-paced digital landscape, responding to leads manually or managing repetitive tasks is costing you revenue. Our <strong>AI Automation Services</strong> are designed to completely engineer how your business operates. From intelligent chatbots that provide 24/7 customer support to seamless Zapier workflows that connect your CRM, email, and sales pipelines — we build systems that work while you sleep.</p>
+                        <p>In today&apos;s fast-paced digital landscape, responding to leads manually or managing repetitive tasks is costing you revenue. Our <strong>AI Automation Services</strong> are designed to completely engineer how your business operates. From intelligent chatbots that provide 24/7 customer support to seamless Zapier workflows that connect your CRM, email, and sales pipelines — we build systems that work while you sleep.</p>
                         
                         <h3>Key Automation Solutions We Implement:</h3>
                         <ul>
@@ -86,8 +87,9 @@ export default function AIAutomation() {
                             <li><strong>Custom AI Workflows:</strong> Using tools like Zapier and Make.com, we orchestrate complex logic that triggers emails, generates documents, and updates team dashboards instantly.</li>
                         </ul>
                         
-                        <div style={{ marginTop: '2rem' }}>
-                            <a href="/#contact" className="btn btn-dark">Discuss Your Automation Needs</a>
+                        <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                            <Link href="/#contact" className="btn btn-dark">Discuss Your Automation Needs</Link>
+                            <Link href="/build-your-chatbot" className="btn btn-white">Try Chatbot Demo</Link>
                         </div>
                     </div>
                 </div>

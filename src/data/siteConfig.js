@@ -26,6 +26,7 @@ const siteConfig = {
     nav: [
         { label: "Home", href: "/#hero" },
         { label: "Services", href: "/#services" },
+        { label: "Try Chatbot Demo", href: "/build-your-chatbot" },
         { label: "Process", href: "/#process" },
         { label: "Portfolio", href: "/#portfolio" },
         { label: "Pricing", href: "/#pricing" },
@@ -81,6 +82,7 @@ const siteConfig = {
         ],
         company: [
             { label: "How We Work", href: "/#process" },
+            { label: "Build Your Own Chatbot", href: "/build-your-chatbot" },
             { label: "Portfolio", href: "/#portfolio" },
             { label: "Pricing", href: "/#pricing" },
             { label: "Blog", href: "/blog" },

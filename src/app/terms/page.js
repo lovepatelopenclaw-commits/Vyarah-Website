@@ -1,8 +1,9 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Terms of Service — Vyarah",
+    title: "Terms of Service | Vyarah",
     description: "Vyarah terms of service for our digital agency services.",
     alternates: {
         canonical: "/terms",
@@ -54,7 +55,7 @@ export default function TermsPage() {
                     </p>
 
                     <div className="legal-back">
-                        <a href="/" className="btn btn-dark">← Back to Home</a>
+                        <Link href="/" className="btn btn-dark">← Back to Home</Link>
                     </div>
                 </div>
             </main>

@@ -11,11 +11,13 @@ import {
 } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Build Your Own Chatbot | Vyarah",
+  title: "Vyarah AI Builder Chatbot Builder | Build Your Own Chatbot",
   description:
-    "Configure a branded AI chatbot live inside the Vyarah builder and test tone, provider, knowledge, and deployment options before launch.",
+    "Configure a branded AI chatbot live inside the Vyarah AI Builder chatbot builder and test tone, provider, knowledge, and deployment options before launch.",
   path: "/build-your-chatbot",
   keywords: [
+    "Vyarah AI",
+    "Vyarah AI Builder",
     "chatbot builder demo",
     "AI chatbot development",
     "OpenAI chatbot India",
@@ -34,7 +36,7 @@ export default function BuildYourChatbotPage() {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "@id": `${absoluteUrl("/build-your-chatbot")}#app`,
-      name: "Vyarah Chatbot Builder Demo",
+      name: "Vyarah AI Builder Chatbot Builder",
       description: metadata.description,
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",
@@ -61,15 +63,16 @@ export default function BuildYourChatbotPage() {
           <div className="dot-pattern"></div>
           <div className="container chatbot-builder-hero-grid">
             <div className="chatbot-builder-hero-copy reveal">
-              <span className="section-tag">Build Your Own Chatbot</span>
+              <span className="section-tag">Vyarah AI Builder Chatbot Builder</span>
               <h1 className="section-title">
-                Configure a Vyarah-style assistant and{" "}
+                Configure the <span className="text-outline">Vyarah AI Builder</span> chatbot builder and{" "}
                 <span className="text-outline">test</span> it live.
               </h1>
               <p className="section-desc">
-                This is a same-site builder experience for prospects who want to
-                see how a chatbot would behave with their own tone, role,
-                knowledge base, and provider setup before booking a project.
+                This is a same-site Vyarah AI Builder chatbot builder experience
+                for prospects who want to see how a chatbot would behave with
+                their own tone, role, knowledge base, and provider setup before
+                booking a project.
               </p>
               <div className="chatbot-builder-hero-badges">
                 <span>4 providers</span>
@@ -90,7 +93,7 @@ export default function BuildYourChatbotPage() {
             <aside className="chatbot-builder-proof reveal">
               <div className="chatbot-builder-proof-card">
                 <p className="chatbot-eyebrow">What this route shows</p>
-                <h2>Make the concept tangible in minutes.</h2>
+                <h2>Make the Vyarah AI chatbot builder concept tangible in minutes.</h2>
                 <ul className="chatbot-builder-proof-list">
                   <li>
                     Adjust assistant identity, behavior, and knowledge without
@@ -98,7 +101,7 @@ export default function BuildYourChatbotPage() {
                   </li>
                   <li>
                     Switch between OpenRouter, OpenAI, Groq, and Together from
-                    one native Vyarah AI builder.
+                    one native Vyarah AI Builder.
                   </li>
                   <li>
                     Keep demo mode server-side so internal provider keys never

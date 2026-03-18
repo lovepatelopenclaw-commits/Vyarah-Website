@@ -1,6 +1,26 @@
+import Link from "next/link";
 import siteConfig from "@/data/siteConfig";
 
-
+const proofPoints = [
+    {
+        label: "Growth Audit",
+        title: "Actionable teardown in 48 hours",
+        description:
+            "We review your traffic flow, conversion friction, SEO setup, and automation gaps before we recommend anything.",
+    },
+    {
+        label: "Delivery Model",
+        title: "Strategy, design, and engineering in one lane",
+        description:
+            "No handoff maze. The same team shapes the roadmap, builds the experience, and connects the backend systems.",
+    },
+    {
+        label: "Engagement Style",
+        title: "Founder-led communication from day one",
+        description:
+            "You work directly with the people planning the solution, not a relay chain of account managers.",
+    },
+];
 
 export default function Hero() {
     return (
@@ -9,15 +29,16 @@ export default function Hero() {
             <div className="container hero-grid">
                 <div className="hero-content">
                     <div className="hero-badge reveal">
-                        <span className="badge-dot"></span> NEW: AI Growth Systems 2.0
+                        <span className="badge-dot"></span> AI, websites, and automation built for measurable growth
                     </div>
                     <h1 className="hero-title reveal">
                         We Don&apos;t Build Websites. We Build{" "}
                         <span className="text-outline">Revenue</span> Machines.
                     </h1>
                     <p className="hero-sub reveal">
-                        AI-driven digital systems that automate your growth, multiply
-                        conversions, and scale your revenue — on autopilot.
+                        We design conversion-focused websites, launch AI assistants, and
+                        wire up growth systems that turn more of your traffic into
+                        qualified conversations and revenue.
                     </p>
                     <div className="hero-ctas reveal">
                         <a href="#contact" className="btn btn-dark btn-lg">
@@ -33,16 +54,23 @@ export default function Hero() {
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </a>
-                        <a href="#results" className="btn btn-white">
-                            See Our Results
-                        </a>
+                        <Link href="/build-your-chatbot" className="btn btn-white">
+                            See AI Chatbot in Action
+                        </Link>
+                    </div>
+                    <div className="hero-proof-grid reveal">
+                        {proofPoints.map((point) => (
+                            <article className="hero-proof-card" key={point.label}>
+                                <span className="hero-proof-label">{point.label}</span>
+                                <strong>{point.title}</strong>
+                                <p>{point.description}</p>
+                            </article>
+                        ))}
                     </div>
                     <div className="hero-stats reveal">
                         {siteConfig.stats.map((stat) => (
                             <div className="stat-item" key={stat.label}>
-                                <span className="stat-number">
-                                    {stat.value}
-                                </span>
+                                <span className="stat-number">{stat.value}</span>
                                 <span className="stat-suffix">{stat.suffix}</span>
                                 <span className="stat-label">{stat.label}</span>
                             </div>

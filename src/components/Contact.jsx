@@ -55,7 +55,7 @@ export default function Contact() {
                                         <polyline points="22,6 12,13 2,6" />
                                     </svg>
                                 </span>
-                                <span>{siteConfig.email}</span>
+                                <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
                             </div>
                             <div className="contact-item">
                                 <span className="contact-icon">

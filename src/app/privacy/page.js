@@ -1,8 +1,9 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Privacy Policy — Vyarah",
+    title: "Privacy Policy | Vyarah",
     description: "Vyarah privacy policy. How we collect, use, and protect your data.",
     alternates: {
         canonical: "/privacy",
@@ -52,7 +53,7 @@ export default function PrivacyPage() {
                     </p>
 
                     <div className="legal-back">
-                        <a href="/" className="btn btn-dark">← Back to Home</a>
+                        <Link href="/" className="btn btn-dark">← Back to Home</Link>
                     </div>
                 </div>
             </main>

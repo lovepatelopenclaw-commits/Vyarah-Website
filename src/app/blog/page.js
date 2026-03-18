@@ -64,7 +64,7 @@ export default function BlogPage() {
             />
             <Navbar />
             <main className="section page-header">
-                <div className="container" style={{ paddingTop: "80px", minHeight: "60vh" }}>
+                <div className="container page-shell">
                     <div className="section-header reveal">
                         <span className="section-tag">Insights & Growth</span>
                         <h1 className="section-title">
@@ -75,73 +75,19 @@ export default function BlogPage() {
                             insights on scaling modern service businesses.
                         </p>
                     </div>
-                    <div
-                        className="blog-grid"
-                        style={{
-                            display: "grid",
-                            gridTemplateColumns:
-                                "repeat(auto-fit, minmax(min(300px, 100%), 1fr))",
-                            gap: "2rem",
-                        }}
-                    >
+                    <div className="blog-grid">
                         {blogPosts.map((post) => (
-                            <Link
-                                href={`/blog/${post.slug}`}
-                                key={post.slug}
-                                style={{
-                                    display: "block",
-                                    textDecoration: "none",
-                                    color: "inherit",
-                                }}
-                            >
-                                <div
-                                    className="blog-card reveal"
-                                    style={{
-                                        background: "var(--surface)",
-                                        border: "1px solid var(--border)",
-                                        borderRadius: "16px",
-                                        padding: "2rem",
-                                        height: "100%",
-                                        transition: "transform 0.2s ease",
-                                        cursor: "pointer",
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            color: "var(--text-muted)",
-                                            fontSize: "0.875rem",
-                                            marginBottom: "1rem",
-                                        }}
-                                    >
-                                        {post.date} • {post.author}
+                            <Link href={`/blog/${post.slug}`} key={post.slug} className="blog-card-link">
+                                <article className="blog-card reveal">
+                                    <div className="blog-card-meta">
+                                        {post.date} <span aria-hidden="true">•</span> {post.author}
                                     </div>
-                                    <h2
-                                        style={{
-                                            fontSize: "1.5rem",
-                                            marginBottom: "1rem",
-                                            color: "var(--text-dark)",
-                                        }}
-                                    >
-                                        {post.title}
-                                    </h2>
-                                    <p
-                                        style={{
-                                            color: "var(--text-muted)",
-                                            lineHeight: 1.6,
-                                        }}
-                                    >
-                                        {post.excerpt}
-                                    </p>
-                                    <div
-                                        style={{
-                                            marginTop: "1.5rem",
-                                            fontWeight: 500,
-                                            color: "var(--sage)",
-                                        }}
-                                    >
-                                        Read Article {"->"}
+                                    <h2 className="blog-card-title">{post.title}</h2>
+                                    <p className="blog-card-excerpt">{post.excerpt}</p>
+                                    <div className="blog-card-cta">
+                                        Read Article <span aria-hidden="true">→</span>
                                     </div>
-                                </div>
+                                </article>
                             </Link>
                         ))}
                     </div>

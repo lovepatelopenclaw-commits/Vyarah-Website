@@ -3,26 +3,21 @@ import testimonialsData from "@/data/testimonials";
 export default function Testimonials() {
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Vyarah Digital Growth Services",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "24"
-        },
-        "review": testimonialsData.map(t => ({
+        "@type": "Service",
+        "name": "Vyarah Growth Systems",
+        "review": testimonialsData.map((t) => ({
             "@type": "Review",
             "name": t.outcome,
             "reviewBody": t.description,
             "reviewRating": {
                 "@type": "Rating",
-                "ratingValue": "5"
+                "ratingValue": "5",
             },
             "author": {
                 "@type": "Person",
-                "name": t.name
-            }
-        }))
+                "name": t.name,
+            },
+        })),
     };
 
     return (
@@ -39,26 +34,26 @@ export default function Testimonials() {
                         <span className="text-outline">Real Clients.</span>
                     </h2>
                     <p className="section-desc">
-                        Don&apos;t just take our word for it. See how we&apos;ve helped businesses scale their growth and revenue.
+                        A few representative outcomes from recent web, AI, and automation projects.
                     </p>
                 </div>
                 <div className="testimonials-grid">
                     {testimonialsData.map((t, i) => (
-                        <div className="testimonial-card reveal" key={i}>
+                        <article className="testimonial-card testimonial-card-simple reveal" key={i}>
                             <div className="testimonial-quote">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" style={{ opacity: 0.1, marginBottom: '1rem' }}>
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                                 </svg>
                                 <p>&quot;{t.description}&quot;</p>
                             </div>
-                            <div className="testimonial-author">
-                                <div className="author-info">
+                            <div className="testimonial-author testimonial-author-simple">
+                                <div className="author-info author-info-centered">
                                     <h4 className="author-name">{t.name}</h4>
                                     <p className="author-company">{t.company}</p>
-                                    <span className="author-outcome badge-dot">{t.outcome}</span>
+                                    <span className="testimonial-result">{t.outcome}</span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
             </div>
