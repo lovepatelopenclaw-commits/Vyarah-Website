@@ -70,8 +70,8 @@ export default function ROICalculator() {
                                 className="roi-slider"
                             />
                             <div className="roi-range-labels">
-                                <span>\u20b91L</span>
-                                <span>\u20b91Cr</span>
+                                <span>{"\u20b91L"}</span>
+                                <span>{"\u20b91Cr"}</span>
                             </div>
                         </div>
                         <div className="roi-input-group">
