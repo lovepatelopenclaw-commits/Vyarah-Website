@@ -4403,6 +4403,37 @@ img {
   word-break: break-word;
 }
 
+.chatbot-message-copy > :first-child {
+  margin-top: 0;
+}
+
+.chatbot-message-copy > :last-child {
+  margin-bottom: 0;
+}
+
+.chatbot-message-copy p,
+.chatbot-message-copy ol,
+.chatbot-message-copy ul {
+  margin: 0 0 .9rem;
+}
+
+.chatbot-message-copy ol,
+.chatbot-message-copy ul {
+  padding-left: 1.35rem;
+}
+
+.chatbot-message-copy li + li {
+  margin-top: .45rem;
+}
+
+.chatbot-message-copy strong {
+  font-weight: 800;
+}
+
+.chatbot-message-copy em {
+  font-style: italic;
+}
+
 .chatbot-message-context {
   margin-top: .85rem;
   padding-top: .85rem;
